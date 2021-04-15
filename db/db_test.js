@@ -24,7 +24,7 @@ function testSave(){
     console.log('save',error,user)
   })
 }
-testSave()
+// testSave()
 
 function testFind () {
   UserModel.find(function (error, users) {
@@ -37,13 +37,13 @@ function testFind () {
 // testFind()
 
 function testUpdate () {
-  UserModel.findByIdAndUpdate({_id:'606f1c425c90264f8c5a8cfc'},
-  {username:'jack'},function (error,oldUser) {
+  UserModel.findByIdAndUpdate({_id:'6073b087a1468c5438f7e694'},
+  {info: '熟悉VUE、html、css、js、es6等技术，在某某公司实习过。'},function (error,oldUser) {
     console.log('findByIdAndUpdate',error,oldUser)
   })
 }
 
-// testUpdate()
+testUpdate()
 
 function testDelete () {
   UserModel.remove({_id:'606fbaecb45ac11ec03ae464'},function (error,status) {

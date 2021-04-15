@@ -7,7 +7,7 @@
 var app = require('../app');
 var debug = require('debug')('gzhipin-server:server');
 var http = require('http');
-
+require('../socketIO/test')(server)
 /**
  * Get port from environment and store in Express.
  */
